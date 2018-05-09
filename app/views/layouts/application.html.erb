@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,700" rel="stylesheet">
+    <title>Blog</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <nav class= "be-red white large-padding">
+        <ul class= "no-list row center-xs middle-xs">
+          <li class="col-md">
+            <h1 class="no-margin" id="logo">Blog Lenin</h1>
+          </li>
+          <li class="col-md">
+            <%= link_to "Inicio" , root_path %>
+          </li>
+          <li class="col-md">
+            Diseño
+          </li>
+          <li class="col-md">
+            Programacion
+          </li>
+          <li class="col-md">
+            Tecnología
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <%= yield %>
+  </body>
+</html>

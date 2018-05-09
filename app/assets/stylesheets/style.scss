@@ -1,0 +1,47 @@
+html,body{
+  margin: 0px;
+  font-family: 'Roboto Slab', serif;
+}
+.btn{
+  background-color: inherit;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+a:visited{
+  color: inherit !important;
+  text-decoration: none;
+}
+.no-margin{
+  margin: 0px;
+}
+#logo{
+  font-size: 1.2em;
+}
+.be-red{
+  background-color: #A2071A
+}
+.white{
+  color: white;
+}
+.large-padding{
+  padding: 10px 5px;
+}
+.field{
+  margin-top: 1em;
+}
+.top-space{
+  margin-top:1em;
+}
+.form-control{
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  width: 100%;
+  display: block;
+  padding: 10px 0px;
+  font-size:  1.5em;
+}
