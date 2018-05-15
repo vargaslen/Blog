@@ -2,6 +2,10 @@ html,body{
   margin: 0px;
   font-family: 'Roboto Slab', serif;
 }
+a:visited{
+
+  text-decoration: none;
+}
 .btn{
   background-color: inherit;
   border: none;
@@ -11,15 +15,15 @@ html,body{
   padding: 10px 12px;
   cursor: pointer;
 }
-a:visited{
-  color: inherit !important;
-  text-decoration: none;
-}
+
 .no-margin{
   margin: 0px;
 }
 #logo{
   font-size: 1.2em;
+}
+.red{
+  color: #E74C3C !important
 }
 .be-red{
   background-color: #A2071A
