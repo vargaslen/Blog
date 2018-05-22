@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-  before_action :set_comment, only: [:show, :edit, :update, :destroy]
+  before_action :set_comment, only: [:update, :destroy]
   before_action :authenticate_user!
   before_action :set_article
 
@@ -27,8 +27,11 @@ class CommentsController < ApplicationController
   # POST /comments
   # POST /comments.json
   def create
-    @comment = current_user.comments.new(comment_params)
-    @comment.article = @article
+    #@comment = current_user.comments.new(comment_params)
+    #@comment.article = @article
+    @comment = @article.comments.new(comment_params)
+    @comment.user = current_user # va con el cambio de arriba
+
 
     respond_to do |format|
       if @comment.save
