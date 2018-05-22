@@ -34,7 +34,7 @@ es:
     attributes:
       article:
         title: título
-        body: Contenido 
+        body: Contenido
     errors:
       messages:
         record_invalid: "La validación falló: %{errors}"
@@ -249,3 +249,4 @@ es:
       long: "%-d de %B de %Y %H:%M"
       short: "%-d de %b %H:%M"
     pm: pm
+# Agregado para autenticacion de usuario con Devise

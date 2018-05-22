@@ -1,1 +1,3 @@
-<h1>Bienvenido al blog de Lenin!!!</h1>
+<% if user_signed_in?  %>
+  <h1>Bienvenido <%= current_user.email%> al blog de Lenin!!!</h1>
+<%  end %>
